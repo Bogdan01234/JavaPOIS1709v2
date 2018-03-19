@@ -10,7 +10,7 @@ public class NumberInWords {
 
         if (number == 0){
             samplesInWords = "ноль";
-        }else if (number < 10){
+        }else if (number > 0 && number < 10){
             samplesInWords = sex[number];
         } else if (number >= 10 && number < 20){
             samplesInWords = str11[number - 10];

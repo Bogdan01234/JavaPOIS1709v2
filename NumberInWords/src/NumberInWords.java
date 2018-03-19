@@ -4,7 +4,7 @@ public class NumberInWords {
         String samplesInWords;
         if (number == 0){
             samplesInWords = "ноль";
-        }else if (number < 10){
+        }else if (number > 0 && number < 10){
             samplesInWords = getUnits(number);
         } else if (number >= 10 && number < 20){
             samplesInWords = getTeens(number - 10);
